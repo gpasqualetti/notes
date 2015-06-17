@@ -77,10 +77,20 @@ x &= \ln{\big(y + \sqrt{y^2+1}\big)} \\
 
 \begin{equation}
   \label{eq:taylor_sinhx}
-  \sinh{x} = x + \frac{x^3}{3!} + \mathrm{O}(x^5)
+  \sinh{x} = x + \frac{x^3}{3!} + \frac{x^5}{5!} + \mathrm{O}(x^6)
 \end{equation}
 \begin{equation}
   \label{eq:taylor_coshx}
-  \cosh{x} = 1 + \frac{x^2}{2} + \mathrm{O}(x^4)
+  \cosh{x} = 1 + \frac{x^2}{2} + \frac{x^4}{4!} + \mathrm{O}(x^5)
 \end{equation}
+\begin{equation}
+  \label{eq:taylor_tanhx}
+  \tanh{x} = x - \frac{x^3}{3} + \frac{2x^5}{15} + \mathrm{O}(x^6)
+\end{equation}
+\begin{equation}
+  \label{eq:taylor_cotanhx}
+  \coth{x} = \frac{1}{x} + \frac{x}{3} - \frac{x^3}{45} + \frac{2x^5}{945} + \mathrm{O}(x^6)
+\end{equation}
+
+La cotangente iperbolica si ricava dalla serie di Laurent anziché di Taylor.
 \end{document}
